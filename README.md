@@ -1,23 +1,15 @@
-# Nextra Docs Template 
+# Radiant Hack
+ 
+Welcome to my hacking of the first two editions of The Black Hack
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+I will be mixing and matching some concepts from these games as well as:
+- Cairn
+- Block, Dodge, Parry
+- Old School Essentials
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+This is for personal use at my table and not intended for commercial use as of now
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+Get Started with the original Black Hack 1e rules [here](/original) or at the [source](https://the-black-hack.jehaisleprintemps.net/)
 
-## Quick Start
 
-Click the button to clone this repository and deploy it on Vercel:
-
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
-
-## Local Development
-
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
+This project uses the following template for ease of starting: [Nextra](https://nextra.site).
