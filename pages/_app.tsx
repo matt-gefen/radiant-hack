@@ -1,4 +1,4 @@
-import { Alegreya } from "@next/font/google";
+import { Alegreya } from "next/font/google";
 import '../styles.css'
 const alegreya = Alegreya({ subsets: ["latin"] });
 
