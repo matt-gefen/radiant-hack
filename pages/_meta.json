@@ -2,5 +2,9 @@
   "index": "Introduction",
   "character": "Character Creation",
   "classes": "Classes",
-  "rules": "Core Rules"
+  "rules": "Core Rules",
+  "attribution": "Attribution & Sources",
+  "original": {
+    "display": "hidden"
+  }
 }
