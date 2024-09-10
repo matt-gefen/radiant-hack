@@ -1,9 +1,21 @@
 {
-  "index": "Introduction",
-  "character": "Character Creation",
-  "classes": "Classes",
+  "index":{
+    "title": "Introduction",
+    "type": "page"
+  },
+  "character": {
+    "title": "Character Creation",
+    "type": "page"
+  },
+  "classes": {
+        "title": "Classes",
+    "type": "page"
+  },
   "rules": "Core Rules",
-  "additional_classes": "Additional Classes",
+  "additional_classes": {
+    "title": "Additional Classes",
+    "type": "page"
+  },
   "attribution": "Attribution & Sources",
   "original": {
     "display": "hidden"
