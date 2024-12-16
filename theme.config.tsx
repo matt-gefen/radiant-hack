@@ -17,6 +17,9 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Made with Nextra Docs Template',
   },
+  sidebar: {
+    defaultMenuCollapseLevel: 1
+  },
   useNextSeoProps() {
     const { asPath } = useRouter()
     if (asPath !== '/') {
