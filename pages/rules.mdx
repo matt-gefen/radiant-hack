@@ -28,6 +28,14 @@ There are 2 important types of tracked time
 - If the ***Characters*** search for a hidden door, they each roll to see if they find it - perhaps taking them ***Minutes***. 
 - If a Dragon attempts to tear them in two, they roll to Defend and evade its vicious jaws - happening in just ***Moments***.
 
+## Usage die
+
+Any item listed in the equipment section that has a ***Usage Die (UD)*** is considered a consumable, limited item. When that item is used the next ***Minute*** (turn) its ***Usage Die*** is rolled. If the roll is 1-2 then the usage die is downgraded to the next lower die in the following chain:
+
+**d20 > d12 > d10 > d8 > d6 > d4**
+
+When you roll a 1-2 on a d4 the item is expended and the ***Character*** has no more of it left.
+
 ## Health
 
 Every ***Character*** and ***Creature*** has something called a ***Hit Die*** (HD), accompanied by a number. This number represents their ***Level*** - for example a Level 6 Ogre has 6HD and a ***Character*** that has 3HD would be Level 3. 
@@ -46,8 +54,8 @@ Rather than track precise numbers, we use 4 abstract ranges for measuring distan
 
 This system is designed to support the narrative ‘theatre of the mind’ style of play, and is less concerned about tracking squares and fiddly distances. For converting existing movement rates or measures (for spells or areas of effect) use the following as a guide :
 
-|  CLOSE  |  NEARBY  |  FAR AWAY  |
-|:-------:|:--------:|:----------:|
+|       CLOSE        |        NEARBY        |        FAR AWAY         |
+| :----------------: | :------------------: | :---------------------: |
 | 0 - 5ft (1 square) | 5 - 60ft (6 squares) | 60 - 120ft (12 squares) |
 
 ## Initiative
@@ -76,18 +84,22 @@ Once a spell is cast the spellcaster must test their ***Spell Attribute*** - add
 
 After roughly 8 hours rest, the number of ***Spell Slots*** a ***Character*** has refreshes to its maximum.
 
-## Armour and shields
+## Armor and shields
 
-When rolling an attribute test to see if you hit or are able to avoid taking damage, and subtract your collective Armour Bonus to the dice roll. Example: If you are wearing Leather armour, subtract 2 to the roll.
+Armor provides protection by reducing all incoming damage. Each type will reduce damage by a limited amount: the amount is called ***Armor Points (AP)***. For example, a character wearing a Gambeson and holding a Small Shield will have damage reduced by 2 Points.
 
-|     Type     | Armour Bonus |
-| :----------: | :----------: |
-|   Gambeson   |      1       |
-|   Leather    |      2       |
-|  Chain Mail  |      3       |
-| Plate & Mail |      4       |
-| Small Shield |      1       |
-| Large Shield |      2       |
+|     Type     | Usage Die | Armor Points (AP) |
+| :----------: | :-------: | :---------------: |
+|   Gambeson   |    d4     |         1         |
+|   Leather    |    d6     |         2         |
+|  Chain Mail  |    d8     |         3         |
+| Plate & Mail |    d10    |         4         |
+| Small Shield |    d4     |         1         |
+| Large Shield |    d4     |         2         |
+
+Immediately after a fight where armor has been used to reduce damage, its Usage Die must be rolled. If the roll is a 1 or 2 the Usage Die reduces as per normal, and the Armor then has the AP of the armor above it in the table. So for example failing a UD roll for Chain would reduce it to having 2 AP (Leather). If the UD is a d4 and fails, it's considered Broken and no will give no benefit until repaired.
+
+Any Armor can be repaired and its Usage Die can be upgraded by one level during a rest.
 
 ## Two handed weapons
 When a ***Character*** wields a large or two-handed weapon such as a polearm or heavy crossbow, 1d4 should be rolled and added to the Attribute Test to Attack, Defend, and to any Attack Damage rolls.
@@ -114,14 +126,14 @@ When a ***Character*** is reduced to zero ***Hit Points (HP)*** they are taken *
 > *If the ***Characters***  lose the fight or are unable to recover the body of the character, they are lost forever!*
 
 
-| OUT | OF Action                                                         |
-|:---:|:--------------------------------------------------------------------|
-|  1  | **KO’d** - Just knocked out.                                        |
-|  2  | **Fat Head** - Disadvantage on all tests for the next hour.         |
-|  3  | **Cracked Bones** - STR, DEX and CON are temp. -2 for the next day. |
-|  4  | **Crippled** - STR or DEX is permanently reduced by 2               |
-|  5  | **Disfigured** - CHA reduced to 4.                                  |
-|  6  | **Dead** - Not alive anymore.                                       |
+|  OUT  | OF Action                                                           |
+| :---: | :------------------------------------------------------------------ |
+|   1   | **KO’d** - Just knocked out.                                        |
+|   2   | **Fat Head** - Disadvantage on all tests for the next hour.         |
+|   3   | **Cracked Bones** - STR, DEX and CON are temp. -2 for the next day. |
+|   4   | **Crippled** - STR or DEX is permanently reduced by 2               |
+|   5   | **Disfigured** - CHA reduced to 4.                                  |
+|   6   | **Dead** - Not alive anymore.                                       |
 
 
 ## Powerful opponents
@@ -134,13 +146,15 @@ A ***GM*** may decide that a particular course of ***Action*** or task has a hig
 
 ## Resting
 
+> Edit
+
 When ***Characters***  rest for about an hour, they regain the use of all their Armor points. Also once per day, after resting, they may roll a ***Hit Die*** associated with their class and regain that many ***HP***.
 
 ## Experience
 
 ***Characters*** learn through defeating and overcoming obstacles. Killing one ***Monster*** won’t bring a revelation of learning to someone. Surviving a dungeon, completing a quest or simply living to tell the tale are the things that bring perspective and growth.
 
-For every milestone ***Character*** survives they gain a level.
+> For every milestone ***Character*** survives they gain a level.
 
 ## Gaining levels
 
@@ -154,12 +168,15 @@ A ***Character*** can carry a number of items equal to their ***STR*** with no i
 
 When using a weapon not listed in their class, combat tests have ***Disadvantage***.
 
+## Class armor
+If a Character wears armor that is not listed in their class, they add their total Armor Points to any rolls to Attack or Avoid Damage.
+
 ## Creature reactions
 
 Some monsters and NPCs will have predetermined personalities and goals that will guide a ***GM*** when choosing their actions and feelings towards the ***Characters*** . Those that do not, such as randomly encountered creatures, make a ***Reaction roll*** on the following table :
 
 | Roll | Reaction                     |
-|:-----|:-----------------------------|
+| :--- | :--------------------------- |
 | 1    | Flee then roll again.        |
 | 2    | Avoid the PCs entirely.      |
 | 3    | Trade with PCs.              |
@@ -169,22 +186,13 @@ Some monsters and NPCs will have predetermined personalities and goals that will
 | 7    | Call for Reinforcements.     |
 | 8    | Capture/Kill/Eat the PCs.    |
 
-
-## Usage die
-
-Any item listed in the equipment section that has a ***Usage Die (UD)*** is considered a consumable, limited item. When that item is used the next ***Minute*** (turn) its ***Usage Die*** is rolled. If the roll is 1-2 then the usage die is downgraded to the next lower die in the following chain:
-
-**d20 > d12 > d10 > d8 > d6 > d4**
-
-When you roll a 1-2 on a d4 the item is expended and the ***Character*** has no more of it left.
-
 ## Magic items
 
-Magic weapons and armour typically add +1 to any attribute being tested whilst using the weapon and +1 to each damage dice rolled. More powerful weapons (+2/3) can be found if the ***GM*** includes them.
+Magic weapons and armor typically add +1 to any attribute being tested whilst using the weapon and +1 to each damage dice rolled. More powerful weapons (+2/3) can be found if the ***GM*** includes them.
 
 ## Monster Damage
 | Monster HD |     Damage     |
-|:----------:|:--------------:|
+| :--------: | :------------: |
 |     1      |     d4 (2)     |
 |     2      |     d6 (3)     |
 |     3      |    2d4 (4)     |
