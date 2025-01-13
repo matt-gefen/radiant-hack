@@ -3,12 +3,9 @@
   "character": "Getting Started",
   "classes": "Classes",
   "rules": "Core Rules",
-  "species": "Species",
-  "additional_classes": "Additional Classes",
   "magic": "Magic",
   "attribution": "Attribution & Sources",
-  "original": {
-    "display": "hidden"
-  },
+  "species": "Species",
+  "additional_classes": "Additional Classes",
   "contents": "Index"
 }
