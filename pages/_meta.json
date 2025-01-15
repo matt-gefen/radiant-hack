@@ -4,8 +4,9 @@
   "classes": "Classes",
   "rules": "Core Rules",
   "magic": "Magic",
-  "attribution": "Attribution & Sources",
+  "equipment": "Equipment",
   "species": "Species",
   "additional_classes": "Additional Classes",
-  "contents": "Index"
+  "contents": "Index",
+  "attribution": "Attribution & Sources"
 }
