@@ -1,6 +1,6 @@
 {
   "warrior": "Warrior",
-  "thief": "Thief",
-  "wizard": "Wizard",
+  "rogue": "Rogue",
+  "mage": "Mage",
   "cleric": "Cleric"
 }

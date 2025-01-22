@@ -1,42 +1,53 @@
 # Equipment
 
-> All prices are in gold pieces, based on prices in _Cairn_
+## Terms
 
-**Terms:**\
-slots - Inventory spaces\
-slow - Walking speed\
-Bulky - Takes up 2 inventory spaces\
-Petty - Takes no inventory space
+**Ammo** - This weapon requires ammo to be carried on a body slot\
+**Blast** - Deals its damage to all creatures inside a zone.\
+**Short range** - This weapon can be used to attack a target **_Nearby_**. Attacks targeting **_Far Away_** or **_Close_** are done at **_Disadvantage_**.\
+**Long range** - This weapon can be used to attack a target **_Nearby_** or **_Far Away_**. Attacks targeting **_Close_** are done at **_Disadvantage_**.\
+**Thrown** - This weapon can be thrown as a ranged attack to a target **_Nearby_**. Throwing **_Far Away_** is done at **_Disadvantage_**.\
+**Two-handed** - This weapon takes up two hand slots.\
+**Versatile** - This weapon has two entries noted under damage; it deals the first when wielded with one hand, and the second when wielded with two.
 
 ## Armor
 
-| Type                                   | Price | Usage Die | Armor Points (AP) | Details |
-| :------------------------------------- | :---- | :-------: | :---------------: | :-----: |
-| Crude Armor                            | 10    |    d4     |         1         | _Bulky_ |
-| Light Armor (Gambeson, Hide, Leather)  | 15    |    d4     |         1         |         |
-| Medium Armor (Chain, Ring-mail, Scale) | 25    |    d6     |         2         |         |
-| Heavy Armor (Plate)                    | 40    |    d8     |         3         |         |
-| Small Shield                           | 10    |    d4     |         1         |         |
-| Large Shield                           | 30    |    d4     |         2         | _Bulky_ |
+| Type                                   | Price | Armor Points (AP) |      Details       |
+| :------------------------------------- | :---- | :---------------: | :----------------: |
+| Crude Armor                            | 10    |         1         |                    |
+| Light Armor (Gambeson, Hide, Leather)  | 15    |         1         |                    |
+| Medium Armor (Chain, Ring-mail, Scale) | 25    |         2         | +1 DR to Dex Tests |
+| Heavy Armor (Plate)                    | 40    |         3         | +2 DR to Dex Tests |
+| Small Shield                           | 10    |        +1         |                    |
+| Large Shield                           | 30    |        +2         |                    |
+| Helmets                                | 10    |        +1         |                    |
 
 ## Weapons
 
-| Basic Weapons                       | Price | Examples                                   | Details                    |
-| ----------------------------------- | ----- | ------------------------------------------ | -------------------------- |
-| Improvised Weapons (d4 damage)      | 5     | Fists, Broken bottle, Table-leg            |                            |
-| Light Weapons (d6 damage)           | 5     | Dagger, Short Sword, Cudgel, Sickle, Staff |                            |
-| Balanced Weapons (d8 damage)        | 10    | Spear, Long Sword, Mace, Axe, Flail        |                            |
-| Heavy Weapons (d10 damage)          | 20    | War Hammer, Greatsword, Glaive             | _Bulky_, two-handed        |
-| Light Ranged Weapons (d6 damage)    | 5     | Sling, Shortbow                            | Needs Ammo, short-range |
-| Balanced Ranged Weapons (d6 damage) | 20    | Longbow                                    | _Bulky_, Needs Ammo        |
-| Heavy Ranged Weapons (d8 damage)    | 30    | Crossbow, Greatbow                         | _Bulky_, Needs Ammo        |
-
+| Common Weapons             | Damage | Price | Details                                       |
+| -------------------------- | ------ | ----- | --------------------------------------------- |
+| Improvised Weapons/Unarmed | d4     | -     |                                               |
+| Dagger                     | d4     | 5     | Thrown                                        |
+| Shortsword                 | d6     | 10    |                                               |
+| Cudgel/Club                | d6     | 3     |                                               |
+| Spear                      | d6/d8  | 5     | Thrown, Versitile                             |
+| Staff                      | d6/2d4 | 3     | Versitile                                     |
+| Longsword                  | d8/d10 | 15    | Versitile                                     |
+| Axe                        | d8     | 12    | Thrown                                        |
+| Mace                       | d8     | 10    |                                               |
+| Glaive                     | 2d4    | 10    | Two-handed                                    |
+| Maul                       | d10    | 15    | Two-handed, Requires Body +2                  |
+| Greatsword                 | 2d6    | 20    | Two-handed, Requires Body +3                  |
+| Sling                      | d4     | 2     | Short range                                   |
+| Shortbow                   | d6     | 8     | Short range, Two-handed, Ammo                 |
+| Crossbow                   | d8     | 20    | Long range, Two-handed, Ammo, Requires Dex +2 |
+| Longbow                    | d10    | 25    | Long range, Two-handed, Ammo, Requires Dex +3 |
+| Ammo                       | -      | 2     | Takes up a Body slot                          |
 
 ## Gear
 
 | Examples                                           | Price |
 | -------------------------------------------------- | ----- |
-| Ammo (Ud8)                                         | 2     |
 | Air Bladder                                        | 5     |
 | Antitoxin (Ud4)                                    | 20    |
 | Bandages (Ud6)                                     | 30    |

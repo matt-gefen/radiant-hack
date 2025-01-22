@@ -2,32 +2,36 @@
 
 ## Actions
 
-During a player’s turn a **_Character_** may move and perform an **_Action_**. They could attack, look for a clue, talk with an **_NPC_**, cast a spell - interacting with the world is an **_Action_**. Often they will test their attributes to determine the outcome.
+During a player’s turn a **_Character_** may move and perform an **_Action_**. They could attack, look for a clue, talk with an **_NPC_**, cast a spell - interacting with the world is an **_Action_**. Often they will test their **_Attributes_** to determine the outcome.
 
 ## Tests
 
 Every **_Action_** involving a **_Character_** that might fail or make the situation worse for the **_Character_** is resolved by **_Testing_** one of their six **_Attributes_**.
 
-In order for their **_Character_** to succeed at an **_Action_**, a **_Player_** must roll a d20 ± **_Attribute_** equal to or greater than **_Difficulty Rating (DR)_**
+In order for their **_Character_** to succeed at an **_Action_**, a **_Player_** must roll a d20 + **_Attribute_** equal to or greater than **_Difficulty Rating (DR)_**
 to succeed. If the **_DR_** is not stated, the default is 12.
 
 Rolling below indicates things went poorly or that the **_Action_** did not go as planned. The **_GM_** will then narrate the outcome of the failed **_Action_** describing how the **_Characters_** are affected.
 
-| Difficulty Ratings (DR) |                   |
-| :---------------------- | :---------------- |
-| 6                       | incredibly simple |
-| 8                       | routine           |
-| 10                      | pretty simple     |
-| 12                      | normal            |
-| 14                      | difficult         |
-| 16                      | really hard       |
-| 18+                     | improbable        |
+| Difficulty Ratings (DR) |           |
+| :---------------------- | :-------- |
+| 5                       | Trivial   |
+| 8                       | Easy      |
+| 12                      | Normal    |
+| 15                      | Hard      |
+| 19                      | Very Hard |
 
-A **_GM_** never rolls dice to resolve NPC or **_Monster_** Actions, or negative elements of the environment such as traps - if they involve a **_Character_**, that **_Player_** will roll. Otherwise the **_GM_** will make a swift and fair judgement call that moves the story forward and abides by the logic of the unfolding fiction, taking note if need be.
+### Critical Success and Failure
 
-## Advantage & disadvantage
+On roll of a 20, the Test is passed with a Critical Success (Crit). The GM determines an additional benefit given to the Player.\
+On a roll of a 1, the Test is passed with a Critical Failure (Fumble). The GM determines an additional penalty given to the Player.
 
-A **_GM_** may decide that a particular course of **_Action_** or task has a higher or lower chance of success. They will ask a player to roll an additional d20 when making a test - with **_Advantage_** the higher result is used and with **_Disadvantage_**, the lower.
+## Advantage & Disadvantage
+
+A **_GM_** may decide that a particular course of **_Action_** or task has a higher or lower chance of success. They will ask a player to roll an additional d20 when making a test
+
+with **_Advantage_** the higher result is used\
+with **_Disadvantage_**, the lower result is used
 
 ## Time
 
@@ -40,18 +44,30 @@ A **_GM_** may advance the clock as they need substituting **_Minutes_** for **_
 
 ### Quick Examples
 
-- If the **_Characters_** search for a hidden door, they each roll to see if they find it - perhaps taking them **_Minutes_**.
+- If the **_Characters_** search for a hidden door, they each Test **_INT_** to see if they find it - perhaps taking them **_Minutes_**.
 - If a Dragon attempts to tear them in two, they roll to Defend and evade its vicious jaws - happening in just **_Moments_**.
 
-## Usage die
+## Usage
 
-When an item or spell described has **_Ud_** and then a number after its name, it is considered to be a consumable, limited use. The ‘Ud’ stands for **_Usage Die_**, the number indicating what size die it is. For example, oil (Ud6) has a Usage Die of 1d6.
+The durability or amount of times an item/consumable can be used are tracked with **_Usage Dots_**.
 
-When something with a Ud is used: its **_Usage Die_** should be rolled. If the result is 1-2 then the Usage Die is downgraded to the next smallest die in the following chain:
+Most items have three usage dots. If all dots are filled the item is destroyed or depleted.
 
-**d20 > d12 > d10 > d8 > d6 > d4**
+Weapons and armor that have run out of usage can be fully repaired for a quarter of their price. A **_Character_** can attempt to repair armor by one dot during a **_Respite_** with an **_INT_** test.
 
-When you roll a 1-2 on a d4 there are no more uses left! For an item this means that it is expanded/consumed and for a spell the effect has run its course.
+The way usage dots are filled differs between items.
+
+- **Weapons** - When a **_Character_** rolls a 1 on an Attack roll, mark a use.
+- **Armor/Shields/Ammo** - Roll a d6 after combat for each item used. On a 1-2, mark a use.
+- **Torches/Lantern Oil** - Roll a d6 every **_Minute_** this item is used. On a 1-2, mark a use.
+- **Rations** - Mark a use when taking a **_Respite_** without taking the time to hunt or forage first.
+- **Toolkits** - Mark a use every time it is utilized.
+- **Other Gear** - Mark a use depending on the situation and the GM.
+
+### Quick Examples:
+
+- A Rogue uses a torch to light the way through a dark corridor. After a **_Minute_**, they roll a d6 and it lands on 2. They then mark a usage dot on their torch. If this happens twice more, the torch is extinguished.
+- A Warrior uses a longbow (which requires Ammo) during a fight in a ruined temple. After combat ends, they roll a d6 and it lands on 1. The Warrior would then mark a use of their Ammo.
 
 ## Health
 
@@ -65,7 +81,20 @@ HD also indicate how many dice to roll to determine the number of **_Hit Points_
 **_Characters_** can gain Hit Points from Spells, Potions, and Skills. They can never gain more than their maximum - and can never go below zero either.\
 When healing a **_Character_** who is [**_Out of Action (OofA)_**](#death-and-dying), just start at zero and count up. That **_Character_** is now back on their feet and no longer **_OofA_**.
 
-## Movement and distance
+## Inventory
+
+A **_Character_** has 10 item slots: two hand slots, two body slots, and six backpack slots. To carry more items, hire someone to carry them, or buy a cart or pack animal.
+
+**Hand Slots:** Items being held, like weapons and shields.\
+**Body Slots:** Items worn for easy access during combat, like secondary weapons. Armor also takes up body slots.\
+**Backpack Slots:** Items not needed in a hurry. Items in backpack slots take an Action to retrieve during combat.
+
+Carrying over this amount means they are **_Weakened_** and can only ever move to somewhere **_Nearby_**. They simply cannot carry more than 10 + double their **_STR_**.
+
+- Items take up 1 inventory space by default
+- 1-100 coins take up 1 space. 100 coins can be exchanged with some merchants or at some inns for a single _platinum mark_.
+
+## Movement and Distance
 
 Rather than track precise numbers, we use 4 abstract ranges for measuring distances:
 
@@ -83,14 +112,7 @@ For converting distances use the following guide for ft and squares on a battlem
 | :----------------: | :------------------: | :---------------------: |
 | 0 - 5ft (1 square) | 5 - 60ft (6 squares) | 60 - 120ft (12 squares) |
 
-## Encumbrance
-
-A **_Character_** can carry a number of items equal to their 10+**_STR_** with no issues. Carrying over this amount means they are **_Weakened_** and can only ever move to somewhere **_Nearby_**. They simply cannot carry more than 10 + double their **_STR_**.
-
-- Items take up 1 inventory space by default
-- _Bulky_ items take up 2 spaces
-- _Petty_ items take up no space
-- 1-100 Coins fit in 1 space
+Combat that is too complex to be managed in the heads of the **_Players_** and **_GM_** is typically run with **_Zones_** that allow for easy tracking of relative distances.
 
 ## Initiative
 
@@ -99,82 +121,72 @@ When combat breaks out, everyone must be sorted into an order so they each get t
 1-3 Enemies begin\
 4-6 Characters begin
 
-Every **_Character_** rolls 1d6 + **_DEX_** going in order of highest roll to lowest.
+After this, each **_Character_** rolls 1d6 + **_DEX_** and takes turns in order of highest roll to lowest.
 
-## Attacking and damage
+## Attacking and Damage
 
 When a **_Character_** attacks a **_Creature_** they must pass the following tests to deal damage
 
 - Test **_STR_** DR12 for a **_Melee Attack_**
 - Test **_DEX_** DR12 for a **_Ranged Attack_**
 
-The damage an attack deals is based on the Weapon Damage.
+The damage an attack deals is based on the damage associated with the weapon they attack with.
 
-Likewise, when a **_Creature_** attacks, the **_Character_** must pass the following tests to avoid taking damage
+Likewise, when a **_Creature_** attacks, the **_Character_** must
 
-- Test **_STR_** DR12 against a **_Melee Attack_**
-- Test **_DEX_** DR12 against a **_Ranged Attack_**
+- Test **_DEX_** DR12
 
 To make a **_Melee Attack_** an opponent must be **_Close_**.\
 **_Ranged Attacks_** against **_Close_** opponents are possible, but the attacker suffers a **_Disadvantage_**.
 
-**_Monsters_** deal damage based on their **_HD_** unless otherwise specified- _GMs refer to the table below_
+### Dual wielding
 
-### Class weapons
+When dual wielding two one-handed weapons, roll the Attack Damage for both weapons and take the higher roll.
 
-When using a weapon not listed in their class, combat tests have **_Disadvantage_**.
+### Critical Damage
 
-### Two handed weapons
-
-When a **_Character_** wields a large or two-handed weapon such as a polearm or heavy crossbow, 1d4 should be rolled and added to the **_DR_** to Attack/Defend, and to any Attack Damage rolls.
-
-When dual wielding two one-handed weapons, the Attack Damage is rolled with **_Advantage_**.
-
-### Critical damage
-
-If a player making an attack rolls a 20, they double the result of the damage dice they roll. If they roll a 1 when avoiding an attack, they take double damage.
+If a **_Player_** making an attack rolls a 20, they double the result of the damage dice they roll. If they roll a 1 when avoiding an attack, they take double damage.\
+If a **_Player_** making an attack rolls a 1, they mark a usage for that weapon.
 
 ### Quick Examples
 
-- A Warrior attacking with a long sword would need to roll a d20 + their **_STR_** score and get above or equal to 12 to deal 1d8 damage to a **_Close_** target.
-- A Thief attacking with a bow would need to roll d20 + their **_DEX_** and get above or equal to 12 deal 1d6 damage to a **_Nearby_** target.
+- A Warrior attacking with a longsword would need to roll a d20 + their **_STR_** score and get above or equal to 12 to deal 1d8 damage to a **_Close_** target.
+- A Rogue attacking with a bow would need to roll d20 + their **_DEX_** and get above or equal to 12 deal 1d6 damage to a **_Nearby_** target.
 
 ## Armor and shields
 
-Armor provides protection by reducing all incoming damage. Each type will reduce damage by a limited amount: the amount is called **_Armor Points (AP)_**. For example, a character wearing a Gambeson and holding a Small Shield will have damage reduced by 2 Points.
+Armor provides protection by reducing all incoming damage. Each type will reduce damage by a limited amount: the amount is called **_Armor Points (AP)_**.
 
 Shields can be sacrificed to ignore an incoming attack.
 
-| Type                      | Usage Die | Armor Points (AP) | Details |
-| :------------------------ | :-------: | :---------------: | :-----: |
-| Crude Armor               |    d4     |         1         | _Bulky_ |
-| Armor (Gambeson)          |    d4     |         1         |         |
-| Medium Armor (Leather)    |    d6     |         2         |         |
-| Heavy Armor (Chain)       |    d8     |         3         | _Bulky_ |
-| Full Armor (Plate & Mail) |    d10    |         4         | _Bulky_ |
-| Small Shield              |    d4     |         1         |         |
-| Large Shield              |    d4     |         2         | _Bulky_ |
+| Type         | Armor Points (AP)     |
+| :----------- | :-------------------- |
+| Crude Armor  | 1 (Uses 2 Body Slots) |
+| Light Armor  | 1                     |
+| Medium Armor | 2                     |
+| Heavy Armor  | 3                     |
+| Small Shield | +1                    |
+| Large Shield | +2                    |
+| Helmets      | +1                    |
 
-Immediately after a fight where Armor has been used to reduce damage, its **_Usage Die_** must be rolled. If the roll is a 1 or 2 the Usage Die reduces as per normal, and the Armor loses 1 AP. So for example failing a UD roll for Chain would reduce it to having 2 AP (Leather). If the UD is a d4 and fails, it's considered Broken and no will give no benefit until repaired.
+After combat where Armor was used to reduce damage, the Charcter rolls [Usage](#usage) to track the item's durability.
 
-Armor **_Usage Die_** & AP can be repaired by one level/point during a rest.
+Armor can be repaired by one Usage dot during a Breather if they pass a **_INT_** Test. During a Respite, Armor is fully repaired.
 
-### Class armor
+### Quick Example
 
-If a Character wears armor that is not listed in their class, they add their total **_Armor Points_** to any rolls to Attack or Avoid Damage.
+- A Warrior wearing a Gambeson (Light Armor) and holding a Small Shield will have damage reduced by 2 Points. After combat, the Warrior will roll [Usage](#usage) for both the Armor and Shield.
 
-## Hinderances
+### Equipment Requirements
 
-Certain abilities, magical effects and consequences of **_Actions_** will leave **_Creatures_** hindered until a successful **_Attribute Test_** of the GM’s choosing is made, sometimes needing an **_Action_** to complete.
+If a Character uses a weapon or wears armor that they do not meet the requirement for:
 
-- **Weakened** - All Attribute Tests are rolled with **_Disadvantage_**.
-- **Distracted** - A **_Character_** cannot perform any Actions, but may still Move normally.
-- **Stuck** - A **_Character_** cannot Move, but they may take Actions as per normal.
-- **Paralysed** - A **_Character_** cannot Move or take any Actions.
+Weapons - Attacks have **_Disadvantage_**.\
+Armor - Attacks and Defense add **_Armor Points_** to their DR.
 
 ## Ongoing Damage
 
-Some Attacks and spells deal damage to **_Creatures_** after their initial effects. When a Creature takes **_Ongoing Damage_** it loses HP equal to its Level at the start of every Turn. An **_Attribute Test_** of the GM’s choosing should be made by the **_Player_** at the end of the **_Turn_** to see if the **_Ongoing Damage_** continues.
+Some Attacks and spells deal damage to **_Creatures_** after their initial effects. When a Creature takes **_Ongoing Damage_** it loses HP equal to its Level at the start of every Turn. An **_Attribute Test_** of the GM’s choosing should be made by the **_Creature_** using their **_Skill_** at the end of their **_Turn_** to see if the **_Ongoing Damage_** continues.
 
 ## Death and dying
 
@@ -197,32 +209,48 @@ When a **_Character_** is reduced to zero **_Hit Points (HP)_** they are taken *
 
 When **_Characters_** rest for about an hour, they...
 
-- Characters may roll a **_Hit Die_** associated with their class and regain half of that (rounded up) **_HP_**.
-- Can repair Armor. The Armor Usage Die can be upgraded by one level.
+- Can roll a **_Hit Die_** and regain that much HP if you have food/rations to eat. Mark a use of that food.
+- Can attempt to repair gear with a STR Test.
 
 ### Respite
 
 After roughly 8 hours of rest...
 
-- Characters may roll a **_Hit Die_** associated with their class and regain that many **_HP_**.
-- The number of **_Magic Die_** a **_Character_** has available refreshes to its maximum.
+- Characters regain all of their HP. If Characters do not take the time to hunt or forage first, they mark a use of food. If they do not have food, they do not regain HP.
+- Regain use of all relevant abilities.
+- Repair gear.
+
+## Hinderances
+
+Certain abilities, magical effects and consequences of **_Actions_** will leave **_Creatures_** hindered until a successful **_Attribute Test_** of the GM’s choosing is made, sometimes needing an **_Action_** to complete.
+
+- **Weakened** - All Tests are rolled with **_Disadvantage_**.
+- **Distracted** - A **_Character_** cannot perform any Actions, but may still Move normally.
+- **Stuck** - A **_Character_** cannot Move, but they may take Actions as per normal.
+- **Paralysed** - A **_Character_** cannot Move or take any Actions.
+
+### Deprivation
+
+A **_Character_** with unmet critical needs (food, rest) after a full day become **_Deprived_**. Someone who is **_Deprived_** is **Weakened** and no longer gains HP by taking a **_Breather_**. After three days with this status, the **_Character_** will fall unconscious and die of exhaustion a day later.
 
 ## Experience
 
-**_Characters_** learn through defeating and overcoming obstacles. Killing one **_Monster_** won’t bring a revelation of learning to someone. Surviving a dungeon, completing a quest or simply living to tell the tale are the things that bring perspective and growth. For every milestone a **_Character_** achieves they gain a level.
+**_Characters_** learn through defeating and overcoming obstacles. For every milestone a **_Character_** achieves they gain a level.
 
-## Gaining levels
+## Gaining Levels
 
 When a **_Character_** levels up, their maximum **_Hit Points_** increase by rolling the **_Hit Die_** for the class. Also a player should roll a d6 for each **_Attribute_**, if the result is higher - that **_Attribute_** increases by 1. The maximum that an **_Attribute_** can be is +6.
 
-## Creature reactions
+## Reactions & Morale
 
 Some Monsters and NPCs will have predetermined personalities and goals that will guide a **_GM_** when choosing their actions and feelings towards the **_Characters_** . Those that do not, such as randomly encountered creatures, make a **_Reaction roll_** on the following table :
 
-| 2d6  | Reaction |
-| :--- | :------- |
-| 2    | Hostile  |
-| 3-5  | Wary     |
-| 6-8  | Curious  |
-| 9-11 | Kind     |
-| 12   | Helpful  |
+| d10 | Reaction |
+| :-- | :------- |
+| 1   | Hostile  |
+| 2-3 | Wary     |
+| 4-7 | Curious  |
+| 8-9 | Kind     |
+| 10  | Helpful  |
+
+If a fight is turning bad for the enemy side, the GM might have the enemy combatants make Morale Tests using their **_Skill_**. On a pass, they will continue fighting. On a fail, they will attempt to parley or flee.
