@@ -15,7 +15,6 @@ const config: DocsThemeConfig = {
     link: 'https://github.com/matt-gefen/radiant-hack',
   },
   footer: {
-    text: 'Made with Nextra Docs Template',
   },
   sidebar: {
     defaultMenuCollapseLevel: 1
