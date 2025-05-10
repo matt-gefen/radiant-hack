@@ -3,8 +3,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
 
 const config: DocsThemeConfig = {
-  logo: <span>Radiants</span>,
-  // docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  logo: <span>Guardians</span>,
   editLink: {
     component: null
   },
@@ -12,9 +11,10 @@ const config: DocsThemeConfig = {
     content: null
   },
   project: {
-    link: 'https://github.com/matt-gefen/radiant-hack',
+    link: 'https://github.com/matt-gefen/radiant-hack/tree/v1.2',
   },
   footer: {
+    text: `Guardians SRD by radiant-moon licensed under CC-BY`
   },
   sidebar: {
     defaultMenuCollapseLevel: 1
@@ -23,11 +23,11 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter()
     if (asPath !== '/') {
       return {
-        titleTemplate: '%s – Radiants'
+        titleTemplate: '%s'
       }
     } else {
       return {
-        titleTemplate: 'Radiants'
+        titleTemplate: 'Guardians'
       }
     }
   }
