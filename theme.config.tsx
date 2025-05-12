@@ -31,6 +31,6 @@ const config: DocsThemeConfig = {
       }
     }
   }
-}
+}3
 
 export default config
